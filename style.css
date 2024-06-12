@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 38px;
+  margin-top: 2%;
+}
+
+.texto{
+  position: absolute;
+  text-align: center; /*  centralizar o texto horizontalmente */
+  font-size: 18px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Altura da página inteira */
+}
+
+
+.coracao3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: rgb(205, 168, 226);
+  flex: 1; /* Garante que o conteúdo ocupe o espaço restante */
+}
+
+.coracao3 img, .texto {
+  max-width: 100%; /* Para garantir que a imagem não ultrapasse a largura da página */
+  height: auto; /* Mantém a proporção da imagem */
+  mix-blend-mode: multiply; /* Tenta mesclar o fundo branco com o fundo da página */
+  animation: pulseAndFade 1s infinite; /* Aplica a animação de pulsação e opacidade */
+}
+
+
+@keyframes pulseAndFade    {
+  
+  0% {
+    transform: scale(1); /* Tamanho original */
+    opacity: 1; /* Totalmente visível */
+}
+50% {
+    transform: scale(1.1); /* Leve ampliação */
+    opacity: 0.7; /* Reduz opacidade */
+}
+100% {
+    transform: scale(1); /* Volta ao tamanho original */
+    opacity: 1; /* Volta a ser totalmente visível */
+}
+}
+
+
+footer{
+  background-color: rgb(205, 168, 226);
+  color: rgb(15, 15, 15); /* Cor do texto */
+  text-align: center;
+  padding: 1em;
+  font-size: 14px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
