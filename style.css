@@ -17,14 +17,14 @@ h1{
   top: 0;
   width: 100%;
   text-align: center;
-  font-size: 38px;
+  font-size: 42px;
   margin-top: 2%;
 }
 
 .texto{
   position: absolute;
   text-align: center; /*  centralizar o texto horizontalmente */
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bolder;
   display: flex;
   flex-direction: column;
@@ -73,6 +73,6 @@ footer{
   color: rgb(15, 15, 15); /* Cor do texto */
   text-align: center;
   padding: 1em;
-  font-size: 14px;
+  font-size: 16px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
