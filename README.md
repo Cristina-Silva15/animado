@@ -1,1 +1,1 @@
-# animado
+# Imagem com animação do CSS
